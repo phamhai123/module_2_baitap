@@ -42,8 +42,7 @@ public class ReadNumber {
             case 10:
                 System.out.println("Ten");
                 break;
-
         }
-        
     }
+
 }
