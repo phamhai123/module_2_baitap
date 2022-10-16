@@ -2,7 +2,7 @@ package Array;
 
 import java.util.Scanner;
 
-public class moreElement {
+public class MoreElement {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

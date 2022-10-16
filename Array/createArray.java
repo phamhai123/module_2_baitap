@@ -3,6 +3,8 @@ package Array;
 import java.util.Scanner;
 
 public class createArray {
+
+
     public static void main(String[] args) {
         int size;
         int[] array;
