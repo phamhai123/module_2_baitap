@@ -4,9 +4,11 @@ public class Country {
     private int id;
     private String code;
     private String name;
+
     public Country() {
 
     }
+
     public Country(int id, String code, String name) {
         this.id = id;
         this.code = code;
@@ -39,10 +41,6 @@ public class Country {
 
     @Override
     public String toString() {
-        return "Country{" +
-                "id=" + id +
-                ", code='" + code + '\'' +
-                ", name='" + name + '\'' +
-                '}';
+        return "Country{" + "id=" + id + ", code='" + code + '\'' + ", name='" + name + '\'' + '}';
     }
 }

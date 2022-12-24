@@ -13,8 +13,9 @@ public class MyList<E> {
     }
 
     public MyList(int capacity) {
-        elements = new  Object[capacity];
+        elements = new Object[capacity];
     }
+
     private void ensureCapa() {
         int newSize = elements.length * 2;
         elements = Arrays.copyOf(elements, newSize);
@@ -24,12 +25,13 @@ public class MyList<E> {
         if (size == elements.length) {
             ensureCapa();
         }
-        elements[size++] = e;
+        elements[size] = e;
+        size++;
     }
 
     public E get(int i) {
-        if (i>= size || i <0) {
-            throw new IndexOutOfBoundsException("Index: " + i + ", Size " + i );
+        if (i >= size || i < 0) {
+            throw new IndexOutOfBoundsException("Index: " + i + ", Size " + i);
         }
         return (E) elements[i];
     }

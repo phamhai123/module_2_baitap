@@ -20,8 +20,7 @@ public class Main {
             e.printStackTrace();
         } finally {
             try {
-                if (br != null)
-                    br.close();
+                if (br != null) br.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -40,12 +39,7 @@ public class Main {
     }
 
     private static void printCountry(List<String> country) {
-        System.out.println(
-                "Country [id= "
-                        + country.get(0)
-                        + ", code= " + country.get(1)
-                        + " , name=" + country.get(2)
-                        + "]");
+        System.out.println("Country [id= " + country.get(0) + ", code= " + country.get(1) + " , name=" + country.get(2) + "]");
     }
 }
 

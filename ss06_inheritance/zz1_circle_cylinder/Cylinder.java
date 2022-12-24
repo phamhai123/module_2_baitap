@@ -20,17 +20,14 @@ public class Cylinder extends Circle {
     public void setHeight(double height) {
         this.height = height;
     }
+
     public double getVolume() {
-        return Math.PI * Math.pow(getRadius(),2) * height;
+        return Math.PI * Math.pow(getRadius(), 2) * height;
     }
 
     @Override
     public String toString() {
-        return "Cylinder{" +
-                "height=" + height +
-                ", Volume=" + getVolume() +
-                ", is a=" + super.toString() +
-                '}';
+        return "Cylinder{" + "height=" + height + ", Volume=" + getVolume() + ", is a=" + super.toString() + '}';
     }
 
 }

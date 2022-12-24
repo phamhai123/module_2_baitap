@@ -1,4 +1,4 @@
-package ss14_sort;
+package ss14_sort.Exercise;
 
 public class InsertionSort {
     static int[] list = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
@@ -20,5 +20,6 @@ public class InsertionSort {
         System.out.println("After insertion sort: ");
         insertionSort(list);
         for (int i = 0; i < list.length; i++)
-            System.out.print(list[i] + " ");    }
+            System.out.print(list[i] + " ");
+    }
 }

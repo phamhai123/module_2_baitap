@@ -9,8 +9,8 @@ public class Prime {
         int numbers = sc.nextInt();
         int count = 0;
         int i = 0;
-        while (count < numbers){
-            if(printPrime(i)==true){
+        while (count < numbers) {
+            if (printPrime(i)) {
                 System.out.println(i);
                 count++;
             }
@@ -19,13 +19,13 @@ public class Prime {
         }
     }
 
-    private static boolean printPrime(int i) {
+    private static boolean printPrime(int n) {
         boolean num = true;
-        if (i<2){
+        if (n < 2) {
             num = false;
         }
-        for (int j = 2; j < i; j++) {
-            if (i%2==0){
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
                 num = false;
             }
         }

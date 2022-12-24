@@ -5,10 +5,7 @@ import java.util.Scanner;
 public class Pictures {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("1. Print the rectangle1\n" +
-                "2. Print the square triangle\n" +
-                "3. Print isosceles triangle\n" +
-                "4. Exit");
+        System.out.println("1. Print the rectangle1\n" + "2. Print the square triangle\n" + "3. Print isosceles triangle\n" + "4. Exit");
         String option;
         do {
             option = sc.nextLine();

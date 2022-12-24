@@ -1,6 +1,6 @@
 package ss07_interface_abstract.baitap.zz2_colorable;
 
-public abstract class Shape implements Colorable{
+public abstract class Shape implements Colorable {
     private String color = "green";
     private boolean filled = true;
 
@@ -30,10 +30,7 @@ public abstract class Shape implements Colorable{
 
     @Override
     public String toString() {
-        return "A Shape with color of "
-                + getColor()
-                + " and "
-                + (isFilled() ? "filled" : "not filled");
+        return "A Shape with color of " + getColor() + " and " + (isFilled() ? "filled" : "not filled");
     }
 
 }

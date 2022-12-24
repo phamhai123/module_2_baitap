@@ -3,6 +3,7 @@ package ss06_inheritance.zz1_circle_cylinder;
 public class Circle {
     private double radius = 1.0;
     private String color = "blue";
+
     public Circle(double radius, String color) {
         this.radius = radius;
         this.color = color;
@@ -35,6 +36,7 @@ public class Circle {
     public double getPerimeter() {
         return 2 * radius * Math.PI;
     }
+
     @Override
     public String toString() {
         return "Circle{" +

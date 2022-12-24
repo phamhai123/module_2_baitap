@@ -5,24 +5,23 @@ import java.util.Queue;
 import java.util.Scanner;
 
 
-
 public class Palindrome {
     public static void main(String[] args) {
-        System.out.println("Enter any string :");
+        Queue check = new LinkedList<>();
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any string :");
         String strings = scanner.nextLine();
         strings = strings.toLowerCase();
-        Queue check = new LinkedList<>();
         for (int i = strings.length() - 1; i >= 0; i--) {
             check.add(strings.charAt(i));
         }
         String text = "";
-        while (!check.isEmpty()){
+        while (!check.isEmpty()) {
             text = text + check.remove();
         }
-        if(text.equals(strings)){
+        if (text.equals(strings)) {
             System.out.println("Is a palindrome");
-        }else {
+        } else {
             System.out.println("Is not a palindrome");
         }
     }

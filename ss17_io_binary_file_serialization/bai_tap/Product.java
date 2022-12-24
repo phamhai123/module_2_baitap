@@ -8,6 +8,7 @@ public class Product implements Serializable {
     private String brand;
     private int cost;
     private String description;
+
     public Product() {
 
     }
@@ -62,12 +63,6 @@ public class Product implements Serializable {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", brand='" + brand + '\'' +
-                ", cost=" + cost +
-                ", description='" + description + '\'' +
-                '}';
+        return "Product{" + "id=" + id + ", name='" + name + '\'' + ", brand='" + brand + '\'' + ", cost=" + cost + ", description='" + description + '\'' + '}';
     }
 }

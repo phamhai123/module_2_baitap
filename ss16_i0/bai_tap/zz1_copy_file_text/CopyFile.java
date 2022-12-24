@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CopyFile {
-    public static List<String> readFile(String filePath){
+    public static List<String> readFile(String filePath) {
         List<String> list = new ArrayList<>();
         try {
             File file = new File(filePath);
@@ -27,24 +27,26 @@ public class CopyFile {
         }
         return list;
     }
-    public static int writeFileText(String filePath, List<String> list) throws IOException{
+
+    public static int writeFileText(String filePath, List<String> list) throws IOException {
         int count = 0;
         try {
             FileWriter writer = new FileWriter(filePath);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
-            for (String text : list){
+            for (String text : list) {
                 bufferedWriter.write(text);
                 bufferedWriter.newLine();
-                count+= text.length();
+                count += text.length();
             }
             bufferedWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return(count);
+        return (count);
     }
+
     public static void main(String[] args) throws IOException {
         List<String> list = readFile("D:\\Module_02\\PhamVanHai-A0722i1\\Module_2_java\\src\\ss16_i0\\bai_tap\\zz1_copy_file_text\\SourceFile.csv");
-        writeFileText("D:\\Module_02\\PhamVanHai-A0722i1\\Module_2_java\\src\\ss16_i0\\bai_tap\\zz1_copy_file_text\\TargetPath.csv",list);
+        writeFileText("D:\\Module_02\\PhamVanHai-A0722i1\\Module_2_java\\src\\ss16_i0\\bai_tap\\zz1_copy_file_text\\TargetPath.csv", list);
     }
 }

@@ -1,11 +1,12 @@
 package ss07_interface_abstract.baitap.zz2_colorable;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private double width = 1.0;
     private double length = 1.0;
 
     public Rectangle() {
     }
+
     public Rectangle(double width, double length) {
         this.width = width;
         this.length = length;
@@ -43,12 +44,7 @@ public class Rectangle extends Shape{
 
     @Override
     public String toString() {
-        return "A Rectangle with width="
-                + getWidth()
-                + " and length="
-                + getLength()
-                + ", which is a subclass of "
-                + super.toString();
+        return "A Rectangle with width=" + getWidth() + " and length=" + getLength() + ", which is a subclass of " + super.toString();
     }
 
 

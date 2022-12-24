@@ -1,4 +1,4 @@
-package ss15_try_catch.bai_tap.zz1;
+package ss15_try_catch.bai_tap;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -15,6 +15,7 @@ public class TriangleEdgesException extends Exception {
             System.out.println("Tam giac hop le!");
         }
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

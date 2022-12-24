@@ -1,7 +1,6 @@
 package ss07_interface_abstract.baitap.zz2_colorable;
 
 
-
 public class Square extends Shape {
     private double side = 1.0;
 
@@ -32,10 +31,7 @@ public class Square extends Shape {
 
     @Override
     public String toString() {
-        return "A Square with side="
-                + getSide()
-                + ", which is a subclass of "
-                + super.toString();
+        return "A Square with side=" + getSide() + ", which is a subclass of " + super.toString();
     }
 
     @Override

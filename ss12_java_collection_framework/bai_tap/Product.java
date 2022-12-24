@@ -1,6 +1,9 @@
 package ss12_java_collection_framework.bai_tap;
 
-public class Product {
+import org.jetbrains.annotations.NotNull;
+
+public class Product implements Comparable {
+
     private int id = 1;
     private String name = "Sam Sung";
     private double core = 1.0;
@@ -47,5 +50,10 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", core=" + core +
                 '}';
+    }
+
+    @Override
+    public int compareTo(@NotNull Object o) {
+        return (int) (this.core-this.core);
     }
 }

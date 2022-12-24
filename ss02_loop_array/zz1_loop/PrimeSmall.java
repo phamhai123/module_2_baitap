@@ -3,19 +3,20 @@ package ss02_loop_array.zz1_loop;
 public class PrimeSmall {
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
-            if(printPrime(i)==true){
+            if (printPrime(i)) {
                 System.out.println(i);
             }
         }
     }
-    private static boolean printPrime(int i) {
+    private static boolean printPrime(int n) {
         boolean num = true;
-        if (i<2||i==99){
+        if (n < 2) {
             num = false;
-        }
-        for (int j = 2; j <= i; j++) {
-            if (i%2==0){
-                num = false;
+        }else {
+            for (int i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    num = false;
+                }
             }
         }
         return num;

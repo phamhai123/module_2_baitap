@@ -1,4 +1,4 @@
-package ss15_try_catch.bai_tap.zz1.thuc_hanh.zz1_debug;
+package ss15_try_catch.thuc_hanh.zz1_debug;
 
 import java.util.Scanner;
 

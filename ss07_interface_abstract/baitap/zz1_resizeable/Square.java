@@ -1,6 +1,6 @@
 package ss07_interface_abstract.baitap.zz1_resizeable;
 
-public class Square extends Shape implements Resizeable{
+public class Square extends Shape implements Resizeable {
     private double side = 1.0;
 
     public Square() {
@@ -11,7 +11,7 @@ public class Square extends Shape implements Resizeable{
         this.side = side;
     }
 
-    public Square(double side,String color, boolean filled) {
+    public Square(double side, String color, boolean filled) {
         super(color, filled);
         this.side = side;
     }
@@ -31,10 +31,7 @@ public class Square extends Shape implements Resizeable{
 
     @Override
     public String toString() {
-        return "A Square with side="
-                + getSide()
-                + ", which is a subclass of "
-                + super.toString();
+        return "A Square with side=" + getSide() + ", which is a subclass of " + super.toString();
     }
 
     @Override
